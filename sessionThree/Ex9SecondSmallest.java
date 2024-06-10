@@ -1,3 +1,5 @@
+//Bt9: so nho thu 2
+
 package sessionThree;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -23,7 +25,7 @@ public class Ex9SecondSmallest {
 
         Arrays.sort(array);
 
-        System.out.println("Mảng sau khi sắp xếp:");
+        System.out.println("After arrange:");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
