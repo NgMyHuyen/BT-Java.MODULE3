@@ -12,7 +12,6 @@ public class Ex2AddElement{
         int[] arr = new int[initialSize];
         int currentSize = 0;
 
-        // Adding initial elements to the array
         for (int i = 0; i < initialSize; i++) {
             System.out.println("Enter element " + (i + 1) + ": ");
             arr[i] = input.nextInt();
@@ -22,15 +21,11 @@ public class Ex2AddElement{
         System.out.println("Array before adding: ");
         printArray(arr, currentSize);
 
-        // Prompting user to add more elements
         System.out.println("Do you want to add more elements? (yes/no)");
         String response = input.next();
         while ("yes".equals(response)) {
-            // Check if the array is full
             if (currentSize == arr.length) {
-                // Create a new array with double the size
                 int[] newArr = new int[arr.length +1];
-                // Copy elements from the old array to the new array
                 for (int i = 0; i < arr.length; i++) {
                     newArr[i] = arr[i];
                 }

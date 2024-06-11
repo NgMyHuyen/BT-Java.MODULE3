@@ -12,14 +12,10 @@ public class BT6Main {
         BT6MyClass myObject = new BT6MyClass(initialString);
 
         System.out.println("First MyString: " + myObject.getMyString());
-        System.out.println();
         
         System.out.println("Enter new string:");
         String newString = input.nextLine();
-        
         myObject.setMyString(newString);
         System.out.println("MyString after change: " + myObject.getMyString());
-        
-        input.close();
     }
 }
